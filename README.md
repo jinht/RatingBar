@@ -47,15 +47,14 @@ __weak JhtRatingBar *weakBar = bar;
 
 注：1. 假使这样初始化后不做其他属性的传递，评分条相关属性会使用默认值，例：星星总的数量（默认：5）；
 &emsp;&emsp;2. 假使评分条宽度在初始化设置的时候，不足以放得下所有星星，内部会动态改变其宽度以至于可以放得下所有星星。
- 
- 
+
 
 ###Remind
 * ARC
 * iOS >= 8.0
 * iPhone \ iPad 
        
-
+       
 ## Hope
 * If you find bug when used，Hope you can Issues me，Thank you or try to download the latest code of this framework to see the BUG has been fixed or not
 * If you find the function is not enough when used，Hope you can Issues me，I very much to add more useful function to this framework ，Thank you !
