@@ -20,7 +20,7 @@
 JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
 ```
 
-#### 2. 滑动评分：只要这两个属性不关闭默认是可以滑动评分的
+#### 2. 滑动评分：只要这两个属性不关闭，默认是可以滑动评分的
 ```
 /** 是否允许可触摸（默认：允许） */
 @property (nonatomic, assign) BOOL isEnableTouch;
