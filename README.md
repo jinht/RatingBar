@@ -21,15 +21,16 @@ JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen ma
 ```
 
 #### 2. 滑动评分：只要这两个属性不关闭，默认是可以滑动评分的
-```
+```oc
 /** 是否允许可触摸（默认：允许） */
 @property (nonatomic, assign) BOOL isEnableTouch;
 /** 是否允许滑动选择（默认：允许）（在isEnableTouch = YES的前提下才有意义） */
 @property (nonatomic, assign) BOOL scrollSelectEnable;
-```oc
+```
+
 
 #### 3. 个性化设置：可以通过设置以下属性做相关设置：半分 && 背景颜色 && 获取最终评分
-```
+```oc
 /** 是否需要半分（默认不需要） */
 @property (nonatomic, assign) BOOL isNeedHalf;
 /** 底部视图的颜色（默认：白色） */
@@ -43,7 +44,8 @@ __weak JhtRatingBar *weakBar = bar;
     bar.starChange = ^() {
         NSLog(@"scale = %lf", weakBar.scale);
 };
-```oc
+```
+
 注：1. 假使这样初始化后不做其他属性的传递，评分条相关属性会使用默认值，例：星星总的数量（默认：5）；
 &emsp;&emsp;2. 假使评分条宽度在初始化设置的时候，不足以放得下所有星星，内部会动态改变其宽度以至于可以放得下所有星星。
 
