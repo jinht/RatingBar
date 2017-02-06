@@ -50,7 +50,7 @@ __weak JhtRatingBar *weakBar = bar;
 &emsp;&emsp;2. 假使评分条宽度在初始化设置的时候，不足以放得下所有星星，内部会动态改变其宽度以至于可以放得下所有星星。
 
 
-###Remind
+### Remind
 * ARC
 * iOS >= 8.0
 * iPhone \ iPad 
