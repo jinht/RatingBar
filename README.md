@@ -9,7 +9,7 @@
 ### Function Description
 1. 点击评分；
 2. 滑动评分；
-3. 个性化设置。<br>
+3. 个性化设置<br>
 
 
 ### How to use
