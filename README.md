@@ -19,26 +19,35 @@
 JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
 ```
 
-#### 2. 滑动评分：只要这两个属性不关闭，默认是可以滑动评分的
+#### 2. 滑动评分：只要这两个属性不关闭，就可以滑动评分的，默认是开启的
 ```oc
-/** 是否允许可触摸（默认：允许） */
-@property (nonatomic, assign) BOOL isEnableTouch;
-/** 是否允许滑动选择（默认：允许）（在isEnableTouch = YES的前提下才有意义） */
+/** 是否允许可触摸
+ *  default：YES
+ */
+@property (nonatomic, assign) BOOL touchEnable;
+/** 是否允许滑动选择（在touchEnable = YES的前提下才有意义）
+ *  default：YES
+ */
 @property (nonatomic, assign) BOOL scrollSelectEnable;
 ```
 
 
 #### 3. 个性化设置：可以通过设置以下属性做相关设置：半分 && 背景颜色 && 获取最终评分
 ```oc
-/** 是否需要半分（默认不需要） */
+/** 是否需要半分
+ *  default：NO
+ */
 @property (nonatomic, assign) BOOL isNeedHalf;
-/** 底部视图的颜色（默认：白色） */
+/** 底部视图的颜色
+ *  default：[UIColor whiteColor]
+ */
 @property (nonatomic, strong) UIColor *bgViewColor;
 
 /** 点亮星星发生变化 */
 @property (nonatomic, copy) StarChange starChange;
 /** 获得的分数 */
 @property (nonatomic, assign, readonly) CGFloat scale;
+
 __weak JhtRatingBar *weakBar = bar;
     bar.starChange = ^() {
         NSLog(@"scale = %lf", weakBar.scale);
