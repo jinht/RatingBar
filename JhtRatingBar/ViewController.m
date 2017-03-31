@@ -36,18 +36,17 @@
 /** 添加评分条 */
 - (void)addRatingBar {
     // 添加评分条
-    JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
-    self.ratingBar = bar;
-    bar.bgViewColor = [UIColor lightGrayColor];
-    bar.starTotalNumber = 8;
-    bar.starSelectNumber = 4;
-    bar.miniSelectedNumber = 3;
-    bar.isNeedHalf = YES;
-    __weak JhtRatingBar *weakBar = bar;
-    bar.starChange = ^() {
+    self.ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
+    self.ratingBar.bgViewColor = [UIColor lightGrayColor];
+    self.ratingBar.starTotalNumber = 8;
+    self.ratingBar.selectedStarNumber = 4;
+    self.ratingBar.minSelectedNumber = 0;
+    self.ratingBar.isNeedHalf = YES;
+    __weak JhtRatingBar *weakBar = self.ratingBar;
+    self.ratingBar.starChange = ^() {
         NSLog(@"scale = %lf", weakBar.scale);
     };
-    [self.view addSubview:bar];
+    [self.view addSubview:self.ratingBar];
 }
 
 
