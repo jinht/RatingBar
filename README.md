@@ -3,7 +3,7 @@
 
 
 ### 先上图，看一下是否符合你的场景吧！
-<img src="https://raw.githubusercontent.com/jinht/RatingBar/master/ReadMEImages/Gif/1.gif" width=250 height=420 />&emsp;<img src="https://raw.githubusercontent.com/jinht/RatingBar/master/ReadMEImages/Gif/2.gif" width=250 height=420 />
+<img src="https://raw.githubusercontent.com/jinht/RatingBar/master/ReadMEImages/Gif/1.gif" width=230 height=410 />&emsp;<img src="https://raw.githubusercontent.com/jinht/RatingBar/master/ReadMEImages/Gif/2.gif" width=230 height=410 />
 
 
 ### Function Description
