@@ -28,7 +28,7 @@ JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen ma
 ```
 
 
-#### 3. 个性化设置：可以通过设置以下属性做相关设置：半分 && 背景颜色 && 获取最终评分
+#### 3. 个性化设置：可以通过设置以下属性做相关设置（半分 && 背景颜色 && 获取最终评分）
 ```oc
 /** 是否需要半分（默认不需要） */
 @property (nonatomic, assign) BOOL isNeedHalf;
