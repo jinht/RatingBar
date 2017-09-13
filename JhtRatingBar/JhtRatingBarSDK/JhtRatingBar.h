@@ -6,20 +6,18 @@
 //  CSDN博客: http://blog.csdn.net/anticipate91
 //
 //  Created by Jht on 2016/12/7.
-//  Copyright © 2016年 靳海涛. All rights reserved.
+//  Copyright © 2016年 JhtRatingBar. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
 
-#pragma mark - Block
-/** 点亮星星发生变化Block */
-typedef void (^StarChange)();
-
-
 /** 评分条_View */
 @interface JhtRatingBar : UIView
+
 #pragma mark - property
 #pragma mark optional
+/** 点亮星星发生变化Block */
+typedef void (^StarChange)();
 /** 点亮星星发生变化 */
 @property (nonatomic, copy) StarChange starChange;
 /** 获得的分数 */
@@ -37,12 +35,8 @@ typedef void (^StarChange)();
  *  default：1
  */
 @property (nonatomic, assign) CGFloat minSelectedNumber;
-/** 是否需要半分
- *  default：NO
- */
-@property (nonatomic, assign) BOOL isNeedHalf;
 
-/** 是否允许可触摸
+/** 是否可触摸
  *  default：YES
  */
 @property (nonatomic, assign) BOOL touchEnable;
@@ -50,6 +44,11 @@ typedef void (^StarChange)();
  *  default：YES
  */
 @property (nonatomic, assign) BOOL scrollSelectEnable;
+
+/** 是否需要半分
+ *  default：NO
+ */
+@property (nonatomic, assign) BOOL isNeedHalf;
 /** 底部视图的颜色
  *  default：[UIColor whiteColor]
  */

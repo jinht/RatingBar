@@ -3,7 +3,7 @@
 //  JhtRatingBarTests
 //
 //  Created by Jht on 2016/12/8.
-//  Copyright © 2016年 Jht. All rights reserved.
+//  Copyright © 2016年 JhtRatingBar. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
