@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A533D9C21F73733900A4DC93 /* JhtRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */; };
+		A533D9C31F73733900A4DC93 /* JhtStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A533D9C11F73733900A4DC93 /* JhtStar.m */; };
 		A536FC481DF9056C00819739 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC471DF9056C00819739 /* main.m */; };
 		A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4A1DF9056C00819739 /* AppDelegate.m */; };
 		A536FC4E1DF9056C00819739 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4D1DF9056C00819739 /* ViewController.m */; };
@@ -15,7 +17,6 @@
 		A536FC561DF9056C00819739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A536FC541DF9056C00819739 /* LaunchScreen.storyboard */; };
 		A536FC611DF9056C00819739 /* JhtRatingBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC601DF9056C00819739 /* JhtRatingBarTests.m */; };
 		A536FC6C1DF9056C00819739 /* JhtRatingBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC6B1DF9056C00819739 /* JhtRatingBarUITests.m */; };
-		A536FCA61DF9111F00819739 /* JhtRatingBarSDK.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A536FCA41DF9111F00819739 /* JhtRatingBarSDK.a */; };
 		A536FCA71DF9111F00819739 /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A536FCA51DF9111F00819739 /* JhtStar.bundle */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		A533D9BD1F73733900A4DC93 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
+		A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBar.m; sourceTree = "<group>"; };
+		A533D9C01F73733900A4DC93 /* JhtStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtStar.h; sourceTree = "<group>"; };
+		A533D9C11F73733900A4DC93 /* JhtStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtStar.m; sourceTree = "<group>"; };
 		A536FC431DF9056C00819739 /* JhtRatingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JhtRatingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC471DF9056C00819739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A536FC491DF9056C00819739 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -53,8 +58,6 @@
 		A536FC671DF9056C00819739 /* JhtRatingBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JhtRatingBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC6B1DF9056C00819739 /* JhtRatingBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBarUITests.m; sourceTree = "<group>"; };
 		A536FC6D1DF9056C00819739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A536FCA31DF9111F00819739 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
-		A536FCA41DF9111F00819739 /* JhtRatingBarSDK.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = JhtRatingBarSDK.a; sourceTree = "<group>"; };
 		A536FCA51DF9111F00819739 /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -63,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A536FCA61DF9111F00819739 /* JhtRatingBarSDK.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A533D9BF1F73733900A4DC93 /* JhtStar */ = {
+			isa = PBXGroup;
+			children = (
+				A533D9C01F73733900A4DC93 /* JhtStar.h */,
+				A533D9C11F73733900A4DC93 /* JhtStar.m */,
+			);
+			path = JhtStar;
+			sourceTree = "<group>";
+		};
 		A536FC3A1DF9056B00819739 = {
 			isa = PBXGroup;
 			children = (
@@ -150,8 +161,9 @@
 		A536FCA21DF9111F00819739 /* JhtRatingBarSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A536FCA31DF9111F00819739 /* JhtRatingBar.h */,
-				A536FCA41DF9111F00819739 /* JhtRatingBarSDK.a */,
+				A533D9BD1F73733900A4DC93 /* JhtRatingBar.h */,
+				A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */,
+				A533D9BF1F73733900A4DC93 /* JhtStar */,
 				A536FCA51DF9111F00819739 /* JhtStar.bundle */,
 			);
 			path = JhtRatingBarSDK;
@@ -292,7 +304,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A533D9C31F73733900A4DC93 /* JhtStar.m in Sources */,
 				A536FC4E1DF9056C00819739 /* ViewController.m in Sources */,
+				A533D9C21F73733900A4DC93 /* JhtRatingBar.m in Sources */,
 				A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */,
 				A536FC481DF9056C00819739 /* main.m in Sources */,
 			);
