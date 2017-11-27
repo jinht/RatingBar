@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A533D9C21F73733900A4DC93 /* JhtRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */; };
-		A533D9C31F73733900A4DC93 /* JhtStar.m in Sources */ = {isa = PBXBuildFile; fileRef = A533D9C11F73733900A4DC93 /* JhtStar.m */; };
 		A536FC481DF9056C00819739 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC471DF9056C00819739 /* main.m */; };
 		A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4A1DF9056C00819739 /* AppDelegate.m */; };
 		A536FC4E1DF9056C00819739 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4D1DF9056C00819739 /* ViewController.m */; };
@@ -17,7 +15,8 @@
 		A536FC561DF9056C00819739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A536FC541DF9056C00819739 /* LaunchScreen.storyboard */; };
 		A536FC611DF9056C00819739 /* JhtRatingBarTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC601DF9056C00819739 /* JhtRatingBarTests.m */; };
 		A536FC6C1DF9056C00819739 /* JhtRatingBarUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC6B1DF9056C00819739 /* JhtRatingBarUITests.m */; };
-		A536FCA71DF9111F00819739 /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A536FCA51DF9111F00819739 /* JhtStar.bundle */; };
+		A58DEF1C1FCBB937003E0F58 /* JhtRatingBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A58DEF1A1FCBB937003E0F58 /* JhtRatingBar.framework */; };
+		A58DEF1D1FCBB937003E0F58 /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A58DEF1B1FCBB937003E0F58 /* JhtStar.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,10 +37,6 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A533D9BD1F73733900A4DC93 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
-		A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBar.m; sourceTree = "<group>"; };
-		A533D9C01F73733900A4DC93 /* JhtStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtStar.h; sourceTree = "<group>"; };
-		A533D9C11F73733900A4DC93 /* JhtStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtStar.m; sourceTree = "<group>"; };
 		A536FC431DF9056C00819739 /* JhtRatingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JhtRatingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC471DF9056C00819739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A536FC491DF9056C00819739 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -58,7 +53,8 @@
 		A536FC671DF9056C00819739 /* JhtRatingBarUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JhtRatingBarUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC6B1DF9056C00819739 /* JhtRatingBarUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBarUITests.m; sourceTree = "<group>"; };
 		A536FC6D1DF9056C00819739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A536FCA51DF9111F00819739 /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
+		A58DEF1A1FCBB937003E0F58 /* JhtRatingBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JhtRatingBar.framework; sourceTree = "<group>"; };
+		A58DEF1B1FCBB937003E0F58 /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +62,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A58DEF1C1FCBB937003E0F58 /* JhtRatingBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -86,15 +83,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A533D9BF1F73733900A4DC93 /* JhtStar */ = {
-			isa = PBXGroup;
-			children = (
-				A533D9C01F73733900A4DC93 /* JhtStar.h */,
-				A533D9C11F73733900A4DC93 /* JhtStar.m */,
-			);
-			path = JhtStar;
-			sourceTree = "<group>";
-		};
 		A536FC3A1DF9056B00819739 = {
 			isa = PBXGroup;
 			children = (
@@ -122,7 +110,7 @@
 				A536FC4A1DF9056C00819739 /* AppDelegate.m */,
 				A536FC4C1DF9056C00819739 /* ViewController.h */,
 				A536FC4D1DF9056C00819739 /* ViewController.m */,
-				A536FCA21DF9111F00819739 /* JhtRatingBarSDK */,
+				A58DEF191FCBB937003E0F58 /* JhtRatingBarSDK */,
 				A536FC4F1DF9056C00819739 /* Main.storyboard */,
 				A536FC521DF9056C00819739 /* Assets.xcassets */,
 				A536FC541DF9056C00819739 /* LaunchScreen.storyboard */,
@@ -158,13 +146,11 @@
 			path = JhtRatingBarUITests;
 			sourceTree = "<group>";
 		};
-		A536FCA21DF9111F00819739 /* JhtRatingBarSDK */ = {
+		A58DEF191FCBB937003E0F58 /* JhtRatingBarSDK */ = {
 			isa = PBXGroup;
 			children = (
-				A533D9BD1F73733900A4DC93 /* JhtRatingBar.h */,
-				A533D9BE1F73733900A4DC93 /* JhtRatingBar.m */,
-				A533D9BF1F73733900A4DC93 /* JhtStar */,
-				A536FCA51DF9111F00819739 /* JhtStar.bundle */,
+				A58DEF1A1FCBB937003E0F58 /* JhtRatingBar.framework */,
+				A58DEF1B1FCBB937003E0F58 /* JhtStar.bundle */,
 			);
 			path = JhtRatingBarSDK;
 			sourceTree = "<group>";
@@ -232,7 +218,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0810;
-				ORGANIZATIONNAME = Jht;
+				ORGANIZATIONNAME = Jinht;
 				TargetAttributes = {
 					A536FC421DF9056C00819739 = {
 						CreatedOnToolsVersion = 8.1;
@@ -278,7 +264,7 @@
 			files = (
 				A536FC561DF9056C00819739 /* LaunchScreen.storyboard in Resources */,
 				A536FC531DF9056C00819739 /* Assets.xcassets in Resources */,
-				A536FCA71DF9111F00819739 /* JhtStar.bundle in Resources */,
+				A58DEF1D1FCBB937003E0F58 /* JhtStar.bundle in Resources */,
 				A536FC511DF9056C00819739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -304,9 +290,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A533D9C31F73733900A4DC93 /* JhtStar.m in Sources */,
 				A536FC4E1DF9056C00819739 /* ViewController.m in Sources */,
-				A533D9C21F73733900A4DC93 /* JhtRatingBar.m in Sources */,
 				A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */,
 				A536FC481DF9056C00819739 /* main.m in Sources */,
 			);
@@ -456,14 +440,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BY48QUJK83;
-				INFOPLIST_FILE = JhtRatingBar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jht.JhtRatingBar;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK/Headers";
+				INFOPLIST_FILE = JhtRatingBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JhtRatingBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -473,14 +458,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = BY48QUJK83;
-				INFOPLIST_FILE = JhtRatingBar/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				LIBRARY_SEARCH_PATHS = (
+				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.jht.JhtRatingBar;
+				HEADER_SEARCH_PATHS = "$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK/Headers";
+				INFOPLIST_FILE = JhtRatingBar/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.JhtRatingBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;

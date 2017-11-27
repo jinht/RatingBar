@@ -1,0 +1,6 @@
+framework module JhtRatingBar {
+  umbrella header "JhtRatingBar.h"
+
+  export *
+  module * { export * }
+}

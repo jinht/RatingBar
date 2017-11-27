@@ -3,7 +3,7 @@
 //  JhtRatingBar
 //
 //  Created by Jht on 2016/12/8.
-//  Copyright © 2016年 JhJhtRatingBart. All rights reserved.
+//  Copyright © 2016年 JhtRatingBar. All rights reserved.
 //
 
 #import "AppDelegate.h"
@@ -12,11 +12,12 @@
 
 @end
 
+
 @implementation AppDelegate
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
     return YES;
 }
 
