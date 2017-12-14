@@ -44,9 +44,6 @@
     
     // 添加评分条
     [self addRatingBar];
-    
-    // 添加《Dismiss》按钮
-    [self addDismissButton];
 }
 
 
@@ -57,26 +54,8 @@
     self.ratingBar.starChange = ^() {
         NSLog(@"scale = %lf", weakBar.scale);
     };
-    [self.view addSubview:self.ratingBar];
-}
-
-
-#pragma mark DismissButton
-/** 添加《Dismiss》按钮 */
-- (void)addDismissButton {
-    CGFloat backBtnW = 80.0;
-    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(FrameW - backBtnW - 10, 400, backBtnW, 30)];
     
-    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
-    [backBtn setTitle:@"Dismiss" forState:UIControlStateNormal];
-    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
-    [self.view addSubview:backBtn];
-}
-
-- (void)backBtnClick {
-    [self dismissViewControllerAnimated:YES completion:^{
-        
-    }];
+    [self.view addSubview:self.ratingBar];
 }
 
 
