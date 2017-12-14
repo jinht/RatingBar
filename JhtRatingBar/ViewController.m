@@ -40,6 +40,7 @@
 - (void)createUI {
     self.view.backgroundColor = [UIColor whiteColor];
     
+    self.navigationController.navigationBar.translucent = NO;
     self.title = @"JhtRatingBar";
     
     // 添加评分条
@@ -64,7 +65,7 @@
 /** 评分条 */
 - (JhtRatingBar *)ratingBar {
     if (!_ratingBar) {
-        _ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, CGRectGetHeight([[UIApplication sharedApplication] statusBarFrame]) + 100, 280, 35)];
+        _ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 88, 280, 35)];
         
         _ratingBar.bgViewColor = [UIColor lightGrayColor];
         _ratingBar.starTotalNumber = 8;
