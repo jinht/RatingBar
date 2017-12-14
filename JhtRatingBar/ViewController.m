@@ -12,8 +12,10 @@
 #import "ViewController.h"
 #import <JhtRatingBar/JhtRatingBar.h>
 
-@interface ViewController ()
+/** 屏幕 宽度 */
+#define FrameW [UIScreen mainScreen].bounds.size.width
 
+@interface ViewController ()
 /** 评分条 */
 @property (nonatomic, strong) JhtRatingBar *ratingBar;
 
@@ -36,30 +38,66 @@
 #pragma mark - UI
 /** 创建UI */
 - (void)createUI {
+    self.view.backgroundColor = [UIColor whiteColor];
+    
+    self.title = @"JhtRatingBar";
+    
     // 添加评分条
     [self addRatingBar];
+    
+    // 添加《Dismiss》按钮
+    [self addDismissButton];
 }
 
 
 #pragma mark RatingBar
 /** 添加评分条 */
 - (void)addRatingBar {
-    // 添加评分条
-    self.ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
-    
-    self.ratingBar.bgViewColor = [UIColor lightGrayColor];
-    self.ratingBar.starTotalNumber = 8;
-    self.ratingBar.selectedStarNumber = 4;
-    self.ratingBar.minSelectedNumber = 0;
-    self.ratingBar.isNeedHalf = YES;
     __weak JhtRatingBar *weakBar = self.ratingBar;
-    
     self.ratingBar.starChange = ^() {
         NSLog(@"scale = %lf", weakBar.scale);
     };
-    
     [self.view addSubview:self.ratingBar];
 }
+
+
+#pragma mark DismissButton
+/** 添加《Dismiss》按钮 */
+- (void)addDismissButton {
+    CGFloat backBtnW = 80.0;
+    UIButton *backBtn = [[UIButton alloc] initWithFrame:CGRectMake(FrameW - backBtnW - 10, 400, backBtnW, 30)];
+    
+    [backBtn setTitleColor:[UIColor redColor] forState:UIControlStateNormal];
+    [backBtn setTitle:@"Dismiss" forState:UIControlStateNormal];
+    [backBtn addTarget:self action:@selector(backBtnClick) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:backBtn];
+}
+
+- (void)backBtnClick {
+    [self dismissViewControllerAnimated:YES completion:^{
+        
+    }];
+}
+
+
+
+#pragma mark - Get
+/** 评分条 */
+- (JhtRatingBar *)ratingBar {
+    if (!_ratingBar) {
+        _ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, CGRectGetHeight([[UIApplication sharedApplication] statusBarFrame]) + 100, 280, 35)];
+        
+        _ratingBar.bgViewColor = [UIColor lightGrayColor];
+        _ratingBar.starTotalNumber = 8;
+        _ratingBar.selectedStarNumber = 4;
+        _ratingBar.minSelectedNumber = 0;
+        _ratingBar.isNeedHalf = YES;
+    }
+    
+    return _ratingBar;
+}
+
+
 
 
 
