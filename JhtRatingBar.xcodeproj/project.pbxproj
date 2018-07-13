@@ -222,7 +222,7 @@
 				TargetAttributes = {
 					A536FC421DF9056C00819739 = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = BY48QUJK83;
+						DevelopmentTeam = 8C4D9692Z4;
 						ProvisioningStyle = Automatic;
 					};
 					A536FC5B1DF9056C00819739 = {
@@ -439,7 +439,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BY48QUJK83;
+				DEVELOPMENT_TEAM = 8C4D9692Z4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK",
@@ -457,7 +457,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				DEVELOPMENT_TEAM = BY48QUJK83;
+				DEVELOPMENT_TEAM = 8C4D9692Z4;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/JhtRatingBar/JhtRatingBarSDK",
