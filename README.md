@@ -13,13 +13,24 @@
 
 
 ### How to use
-#### 1. 点击评分
+```oc
+platform:ios, '8.0'
+
+target '*****' do
+
+pod 'JhtRatingBar'
+        
+end
+
+```
+
+#### 2. 点击评分
 ```oc
 /** 常规初始化方法 */
 JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 150, 280, 35)];
 ```
 
-#### 2. 滑动评分：只要这两个属性不关闭，默认是可以滑动评分的
+#### 3. 滑动评分：只要这两个属性不关闭，默认是可以滑动评分的
 ```oc
 /** 是否允许可触摸（默认：允许） */
 @property (nonatomic, assign) BOOL isEnableTouch;
@@ -28,7 +39,7 @@ JhtRatingBar *bar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen ma
 ```
 
 
-#### 3. 个性化设置：可以通过设置以下属性做相关设置（半分 && 背景颜色 && 获取最终评分）
+#### 4. 个性化设置：可以通过设置以下属性做相关设置（半分 && 背景颜色 && 获取最终评分）
 ```oc
 /** 是否需要半分（默认不需要） */
 @property (nonatomic, assign) BOOL isNeedHalf;
