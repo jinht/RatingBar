@@ -34,7 +34,6 @@
 }
 
 
-
 #pragma mark - UI
 /** 创建UI */
 - (void)createUI {
@@ -47,8 +46,6 @@
     [self addRatingBar];
 }
 
-
-#pragma mark RatingBar
 /** 添加评分条 */
 - (void)addRatingBar {
     __weak JhtRatingBar *weakBar = self.ratingBar;
@@ -60,9 +57,7 @@
 }
 
 
-
-#pragma mark - Get
-/** 评分条 */
+#pragma mark - Getter
 - (JhtRatingBar *)ratingBar {
     if (!_ratingBar) {
         _ratingBar = [[JhtRatingBar alloc] initWithFrame:CGRectMake(([UIScreen mainScreen].bounds.size.width - 280) / 2, 88, 280, 35)];
@@ -75,16 +70,6 @@
     }
     
     return _ratingBar;
-}
-
-
-
-
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 
