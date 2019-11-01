@@ -10,7 +10,7 @@
 //
 
 #import "ViewController.h"
-#import <JhtRatingBar/JhtRatingBar.h>
+#import "JhtRatingBar.h"
 
 /** 屏幕 宽度 */
 #define FrameW [UIScreen mainScreen].bounds.size.width

@@ -7,7 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8EC6893221C8A50200B4AB3D /* JhtRatingBar.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8EC6893021C8A50200B4AB3D /* JhtRatingBar.framework */; };
+		8E6FD8AA236C6CCC00A181D1 /* JhtRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */; };
+		8E6FD8AB236C6CCC00A181D1 /* JhtStar in Resources */ = {isa = PBXBuildFile; fileRef = 8E6FD8A9236C6CCC00A181D1 /* JhtStar */; };
 		8EC6893321C8A50200B4AB3D /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EC6893121C8A50200B4AB3D /* JhtStar.bundle */; };
 		A536FC481DF9056C00819739 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC471DF9056C00819739 /* main.m */; };
 		A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4A1DF9056C00819739 /* AppDelegate.m */; };
@@ -35,7 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8EC6893021C8A50200B4AB3D /* JhtRatingBar.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = JhtRatingBar.framework; sourceTree = "<group>"; };
+		8E6FD8A7236C6CCC00A181D1 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
+		8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBar.m; sourceTree = "<group>"; };
+		8E6FD8A9236C6CCC00A181D1 /* JhtStar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JhtStar; sourceTree = "<group>"; };
 		8EC6893121C8A50200B4AB3D /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
 		A536FC431DF9056C00819739 /* JhtRatingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JhtRatingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC471DF9056C00819739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -56,7 +59,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8EC6893221C8A50200B4AB3D /* JhtRatingBar.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,7 +82,9 @@
 		8EC6892F21C8A50200B4AB3D /* JhtRatingBar_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				8EC6893021C8A50200B4AB3D /* JhtRatingBar.framework */,
+				8E6FD8A7236C6CCC00A181D1 /* JhtRatingBar.h */,
+				8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */,
+				8E6FD8A9236C6CCC00A181D1 /* JhtStar */,
 				8EC6893121C8A50200B4AB3D /* JhtStar.bundle */,
 			);
 			path = JhtRatingBar_SDK;
@@ -241,6 +245,7 @@
 				A536FC531DF9056C00819739 /* Assets.xcassets in Resources */,
 				8EC6893321C8A50200B4AB3D /* JhtStar.bundle in Resources */,
 				A536FC511DF9056C00819739 /* Main.storyboard in Resources */,
+				8E6FD8AB236C6CCC00A181D1 /* JhtStar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,6 +271,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A536FC4E1DF9056C00819739 /* ViewController.m in Sources */,
+				8E6FD8AA236C6CCC00A181D1 /* JhtRatingBar.m in Sources */,
 				A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */,
 				A536FC481DF9056C00819739 /* main.m in Sources */,
 			);
