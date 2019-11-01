@@ -16,8 +16,8 @@
 
 #pragma mark - property
 #pragma mark optional
-typedef void (^StarChange)();
 /** 点亮星星数量 发生变化 */
+typedef void (^StarChange)();
 @property (nonatomic, copy) StarChange starChange;
 /** 获得的分数 */
 @property (nonatomic, assign, readonly) CGFloat scale;
