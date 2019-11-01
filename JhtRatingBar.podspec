@@ -11,6 +11,5 @@ Pod::Spec.new do |s|
     s.ios.deployment_target      = '8.0'
     s.source                     = { :git => 'https://github.com/jinht/RatingBar.git', :tag => s.version }
     s.resource                   = 'JhtRatingBar_SDK/JhtStar.bundle'
-    s.frameworks                 = 'UIKit'
 
 end
