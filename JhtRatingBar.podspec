@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
     
     s.name                       = 'JhtRatingBar'
-    s.version                    = '1.0.1'
+    s.version                    = '1.0.2'
     s.summary                    = '评分条/星级条'
     s.homepage                   = 'https://github.com/jinht/RatingBar'
     s.license                    = { :type => 'MIT', :file => 'LICENSE' }
@@ -11,7 +11,6 @@ Pod::Spec.new do |s|
     s.ios.deployment_target      = '8.0'
     s.source                     = { :git => 'https://github.com/jinht/RatingBar.git', :tag => s.version }
     s.resource                   = 'JhtRatingBar_SDK/JhtStar.bundle'
-    ##s.ios.vendored_frameworks    = 'JhtRatingBar_SDK/JhtRatingBar.framework'
     s.frameworks                 = 'UIKit'
 
 end
