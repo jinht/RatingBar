@@ -16,7 +16,7 @@
 #define FrameW [UIScreen mainScreen].bounds.size.width
 
 @interface ViewController ()
-/** 评分条 */
+
 @property (nonatomic, strong) JhtRatingBar *ratingBar;
 
 @end
@@ -29,20 +29,17 @@
     
     self.view.backgroundColor = [UIColor whiteColor];
     
-    // 创建UI
     [self createUI];
 }
 
 
 #pragma mark - UI
-/** 创建UI */
 - (void)createUI {
     self.view.backgroundColor = [UIColor whiteColor];
     
     self.navigationController.navigationBar.translucent = NO;
     self.title = @"JhtRatingBar";
     
-    // 添加评分条
     [self addRatingBar];
 }
 

@@ -7,9 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8E6FD8AA236C6CCC00A181D1 /* JhtRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */; };
-		8E6FD8AB236C6CCC00A181D1 /* JhtStar in Resources */ = {isa = PBXBuildFile; fileRef = 8E6FD8A9236C6CCC00A181D1 /* JhtStar */; };
-		8EC6893321C8A50200B4AB3D /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8EC6893121C8A50200B4AB3D /* JhtStar.bundle */; };
+		8E6FD8B2236C6E6200A181D1 /* JhtStar.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8E6FD8AC236C6E6200A181D1 /* JhtStar.bundle */; };
+		8E6FD8B3236C6E6200A181D1 /* JhtStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6FD8AF236C6E6200A181D1 /* JhtStar.m */; };
+		8E6FD8B4236C6E6200A181D1 /* JhtRatingBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 8E6FD8B0236C6E6200A181D1 /* JhtRatingBar.m */; };
 		A536FC481DF9056C00819739 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC471DF9056C00819739 /* main.m */; };
 		A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4A1DF9056C00819739 /* AppDelegate.m */; };
 		A536FC4E1DF9056C00819739 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A536FC4D1DF9056C00819739 /* ViewController.m */; };
@@ -36,10 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		8E6FD8A7236C6CCC00A181D1 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
-		8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBar.m; sourceTree = "<group>"; };
-		8E6FD8A9236C6CCC00A181D1 /* JhtStar */ = {isa = PBXFileReference; lastKnownFileType = folder; path = JhtStar; sourceTree = "<group>"; };
-		8EC6893121C8A50200B4AB3D /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
+		8E6FD8AC236C6E6200A181D1 /* JhtStar.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = JhtStar.bundle; sourceTree = "<group>"; };
+		8E6FD8AE236C6E6200A181D1 /* JhtStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtStar.h; sourceTree = "<group>"; };
+		8E6FD8AF236C6E6200A181D1 /* JhtStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtStar.m; sourceTree = "<group>"; };
+		8E6FD8B0236C6E6200A181D1 /* JhtRatingBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JhtRatingBar.m; sourceTree = "<group>"; };
+		8E6FD8B1236C6E6200A181D1 /* JhtRatingBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JhtRatingBar.h; sourceTree = "<group>"; };
 		A536FC431DF9056C00819739 /* JhtRatingBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JhtRatingBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A536FC471DF9056C00819739 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A536FC491DF9056C00819739 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -79,13 +80,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8E6FD8AD236C6E6200A181D1 /* JhtStar */ = {
+			isa = PBXGroup;
+			children = (
+				8E6FD8AE236C6E6200A181D1 /* JhtStar.h */,
+				8E6FD8AF236C6E6200A181D1 /* JhtStar.m */,
+			);
+			path = JhtStar;
+			sourceTree = "<group>";
+		};
 		8EC6892F21C8A50200B4AB3D /* JhtRatingBar_SDK */ = {
 			isa = PBXGroup;
 			children = (
-				8E6FD8A7236C6CCC00A181D1 /* JhtRatingBar.h */,
-				8E6FD8A8236C6CCC00A181D1 /* JhtRatingBar.m */,
-				8E6FD8A9236C6CCC00A181D1 /* JhtStar */,
-				8EC6893121C8A50200B4AB3D /* JhtStar.bundle */,
+				8E6FD8B1236C6E6200A181D1 /* JhtRatingBar.h */,
+				8E6FD8B0236C6E6200A181D1 /* JhtRatingBar.m */,
+				8E6FD8AD236C6E6200A181D1 /* JhtStar */,
+				8E6FD8AC236C6E6200A181D1 /* JhtStar.bundle */,
 			);
 			path = JhtRatingBar_SDK;
 			sourceTree = "<group>";
@@ -243,9 +253,8 @@
 			files = (
 				A536FC561DF9056C00819739 /* LaunchScreen.storyboard in Resources */,
 				A536FC531DF9056C00819739 /* Assets.xcassets in Resources */,
-				8EC6893321C8A50200B4AB3D /* JhtStar.bundle in Resources */,
+				8E6FD8B2236C6E6200A181D1 /* JhtStar.bundle in Resources */,
 				A536FC511DF9056C00819739 /* Main.storyboard in Resources */,
-				8E6FD8AB236C6CCC00A181D1 /* JhtStar in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,10 +279,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8E6FD8B3236C6E6200A181D1 /* JhtStar.m in Sources */,
 				A536FC4E1DF9056C00819739 /* ViewController.m in Sources */,
-				8E6FD8AA236C6CCC00A181D1 /* JhtRatingBar.m in Sources */,
 				A536FC4B1DF9056C00819739 /* AppDelegate.m in Sources */,
 				A536FC481DF9056C00819739 /* main.m in Sources */,
+				8E6FD8B4236C6E6200A181D1 /* JhtRatingBar.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
